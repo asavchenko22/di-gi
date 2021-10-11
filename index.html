@@ -1,114 +1,334 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Di Gi digital agency</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Di Gi digital agency</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/newstyle.css">
 </head>
-
 <body>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-
-  <div class="wrapper">
-    <section class="container">
-      <!--header-->
-      <div class="header_body">
-        <div class="header_logo_link">
-          <a href=""><img class="header_logo" src="images/icons/DiGi-logo.svg"></a>
+	<!--header-->
+    <section class="header">
+		<h1></h1>
+        <div class="header_container">
+            <div class="navbar">
+              <img src="/images/icons/DiGi-logo.svg" alt="logo">					
+              <button class="nav_button"><img src="/images/icons/menu-burger.svg" alt=""></button>                     
+            </div>
         </div>
-        <button class="header_button"><img src="images\icons\menu-burger.svg" alt="menu"></button>
-      </div>
-      <!--intro-->
-      <div class="intro">
-        <img src="/images/block1/bg-img1440.jpg" alt="">
-        <div>
-          <div class="intro_title"></div>
-          <p class="intro_text">
-            Di Gі - это диджитал агентство полного цикла,
-            направленное на самый лучший результат наших клиентов
-            в маркетинге, продажах и управлении
-          </p>
-          <div>
-            <button class="button_intro_more">
-              <p class="read_more">
-                ПОДРОБНЕЕ
-              </p>
-            </button>
+    </section>
+		<!--intro-->
+    <section class="intro" id="di-gi">
+        <div class="container">
+          <div class="intro_title">
+            МЫСЛИ ГЛОБАЛЬНО
           </div>
-          <div>
+					<p class="intro_p">
+						Di Gі - это диджитал агентство полного цикла, направленное на самый лучший<br>
+						результат наших клиентов в маркетинге, продажах и управлении
+					</p>
+					<div>
+						<button class="intro_button">
+							<text class="intro_button_text">ПОДРОБНЕЕ</text>
+						</button>
+					</div>
+					<div class="pagination">
+						<button role="button" class="oval">
+							<span></span>
+						</button>
+						<button role="button" class="oval active">
+							<span></span>
+						</button>
+						<button role="button" class="oval">
+							<span></span>
+						</button>
+					</div>
+					<div>
             <button class="button_back"></button>
             <button class="button_forward"></button>
           </div>
-          <div class="intro_pagnitation">
-            <img src="/images/block1/pagination.png" alt="">
-          </div>
         </div>
-      </div>
-      <!--promo-->
-      <div class="promo_body">
-        <div class="promo_text1">
-          Вы полюбите нас с первой встречи!
-          <div class="promo_text2">
-            Мы предоставляем комплексный подход к продвижению компании, <br>
-            продуктов и услуг в цифровой сфере.
-          </div>
-        </div>
-        <div>
-          <button class="button_call_back">
-            <p class="call_back_text">
-              ПЕРЕЗВОНИТЕ МНЕ
-            </p>
-          </button>
-        </div>
-      </div>
-      <!--Servises-->
-      <div class="servises">
-        <div class="servises_container">
-          <div class="servises_title">Сервис</div>
-          <div class="servises_contant_container">
-            <div class="servises_from_idea">
-              От идеи до незабываемого и <br>
-              измеримого результата.
-            </div>
-            <div class="servises_line"></div>
-            <div class="servises_integrating_flawless">
-              Интеграция безупречного производства, <br>
-              передовых технологий и тщательного <br>
-              измерения производительности
-            </div>
-          </div>
-          <div class="servises_items">
-            <div class="servises_strategy"><img src="/images/icons/strategy.svg" alt=""></div>
-            <div class="servises_analysys"><img src="/images/icons/analysis.svg" alt=""></div>
-            <div class="servises_sotial_media"><img src="/images/icons/sotialMedia.svg" alt=""></div>
-            <div class="servises_development"><img src="/images/icons/development.svg" alt=""></div>
-            <div class="servises_content"><img src="/images/icons/content.svg" alt=""></div>
-            <div class="servises_design_ux"><img src="/images/icons/design&Ux.svg" alt=""></div>
-            <div class="servises_advertising"><img src="/images/icons/digitalAdvertising.svg" alt=""></div>
-            <div class="servises_products"><img src="/images/icons/products.svg" alt=""></div>
-          </div>
-        </div>
-      </div>
-      <!--Portfolio-->
-      <div class="portfolio">
-        <div class="portfolio_container">
-          <div class="our_projects">
-            <div class="our_projects_text">Наши Проекты</div>
-            <img class="projects_line" src="/images/portfolio/line.png" alt="">
-          </div>
-        </div>
-      </div>
-
-
-
     </section>
-  </div>
+		<!--promo-->
+		<section class="promo">
+			<h2>Вы полюбите нас с первой встречи!</h2>
+			<h4>
+				Мы предоставляем комплексный подход к продвижению компании,<br> 
+				продуктов и услуг в цифровой сфере.
+			</h4>
+			<div>
+				<button class="promo_button">
+					<a class="promo_button_text" href="#">ПЕРЕЗВОНИТЕ МНЕ</a>
+				</button>
+			</div>
+		</section>
+		<!--servises-->
+		<section class="servises">
+			<div class="servises_container">
+				<div class="servises_title">Сервис</div>
+				<div class="servises_contant_container">
+					<div class="servises_from_idea">
+						От идеи до незабываемого и <br>
+						измеримого результата.
+					</div>
+					<div class="servises_line"></div>
+					<div class="servises_integrating_flawless">
+						Интеграция безупречного производства, <br>
+						передовых технологий и тщательного <br>
+						измерения производительности
+					</div>
+				</div>
+				<div class="servises_items">
+					<div class="servises_strategy">
+						<img src="/images/icons/strategy.svg" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_analysys">
+						<img src="/images/icons/analysis.svg" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_sotial_media">
+						<img src="/images/icons/sotialMedia.svg" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_development">
+						<img src="/images/icons/development.svg" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_content">
+						<img src="/images/icons/content.svg" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_design_ux">
+						<img src="/images/icons/designUX-0.png" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_advertising">
+						<img src="/images/icons/digitalAdvertising.svg" alt="">
+						<a href="#"></a>
+					</div>
+					<div class="servises_products">
+						<img src="/images/icons/products.svg" alt="">
+						<a href="#"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Portfolio-->
+		<section class="portfolio" id="portfolio">
+		 <div class="portfolio_container">
+			  <div class="our_projects">
+				  <div class="our_projects_text">Наши Проекты</div>
+				  <img class="projects_line" src="/images/portfolio/line.png" alt="">
+			  </div>
+				<div class="our_projects_content">
+					<div class="Lalique_boutique">
+						<img src="/images/portfolio/Portfolio-1.png" alt="img">
+						<div class="overlay">
+							<a class="overlay_info" href="#"></a>
+							<a class="overlay_search" href="#"></a>
+						</div>
+					</div>	
+					<div class="construction_of_houses">
+						<img src="/images/portfolio/Portfolio-2.png" alt="img">
+						<div class="overlay">
+							<a class="overlay_info" href="#"></a>
+							<a class="overlay_search" href="#"></a>
+						</div>
+					</div>	
+					<div class="cofee_house">
+						<img src="/images/portfolio/portfolio-3.2.png" alt="img">
+						<div class="overlay">
+							<a class="overlay_info" href="#"></a>
+							<a class="overlay_search" href="#"></a>
+						</div>
+					</div>	
+					<div class="unique_tours">
+						<img src="/images/portfolio/Portfolio-4.png" alt="img">
+						<div class="overlay">
+							<a class="overlay_info" href="#"></a>
+							<a class="overlay_search" href="#"></a>
+						</div>
+					</div>	
+					<div class="titles">
+						<ul>
+							<li><a href="#">Lalique бутик</a></li>
+							<li><a href="#">Строительство домов</a></li>
+							<li><a href="#">Кофейня</a></li>
+							<li><a href="#">Уникальные туры</a></li>
+						</ul>
+					</div>
+				</div>
+		 </div>
+		</section>
+	 <!--videoBlock-->
+	 <section class="video_block" id="our_team">
+			<div class="videocontent">
+				<img src="/images/video_block/video_blog.jpg" alt="video">
+			</div>
+			<h1>Команда</h1>
+			<h3>
+				Наша команда - это наша самая большая ценность.<br>
+				Мы трудились, чтобы собрать группу  экспертов,<br>
+				чьи навыки дополняют друг друга.<br> 
+				У членов нашей команды разные истории, но мы разделяем общую<br> 
+				страсть к идеалу. Мы верим, чтобы оставаться<br>
+				профессионалом, нужно развиваться,<br> 
+				поэтому мы постоянно ищем способы, как стать лучше<br> 
+				в том, что мы делаем.<br>
+			</h3>
+			<div>
+				<button class="vatch_video_button">
+					<a class="vatch_video_button_text">СМОТРЕТЬ ВИДЕО</a>
+				</button>
+			</div>
+	 </section>
+	 <!--latestNews-->
+	 <section class="latest_news" id="blog">
+		 <div class="latest_news_title">
+			 <h1>Последние Новости</h1>
+		 </div>
+		 <div class="latest_news_content">
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-1.jpg" alt="">
+						<a class="overlay_news_info" href="#"></a>
+				  <div class="news"><p>3Д в брендинге</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-5.jpg" alt="">
+					<a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Уникальный дизайн</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-2.jpg" alt="">
+				 <a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Контекстная реклама</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-6.jpg" alt="">
+				 <a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Взгляд со стороны</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-3.jpg" alt="">
+				 <a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Графика</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-7.jpg" alt="">
+				 <a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Соц сети и их польза</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-4.jpg" alt="">
+				 <a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Корпоративная культура</p></div>
+				</div>
+			 <div class="latest_news_content_img">
+				 <img src="/images/latest_news/news-8.jpg" alt="">
+				 <a class="overlay_news_info" href="#"></a>
+				 <div class="news"><p>Эксклюзивность</p></div>
+				</div>
+		 </div>
+	 </section>
+	 <!--testimonial-->
+	 <section class="testimonial">
+			<div class="quotes">
+				<img src="/images/testimonial/quotes.svg" alt="">
+					<h1>
+						Если нужно создавать либо повышать имидж компании,<br>
+						то диджитал-маркетинг является наиболее подходящим
+					</h1>
+					<h2>
+						- Маргарита Акулич
+					</h2>
+					<div class="pagination">
+						<button role="button" class="oval">
+							<span></span>
+						</button>
+						<button role="button" class="oval active">
+							<span></span>
+						</button>
+						<button role="button" class="oval">
+							<span></span>
+						</button>
+					</div>
+			</div>
+	 </section>
+	 <!--footer-->
+	 <section class="footer">
+		<div class="vatch_button">
+      <a class="vatch_button_link" href="#di-gi">
+        <button href="#di-gi"></button>
+      </a>
+		</div> 
+    <p>
+      Мы хотели бы услышать все о вашем проекте.<br>
+      Свяжись с нами.
+    </p>
+    <div class="sotial">
+      <a target="_blank" href="https://uk-ua.facebook.com/"><div class="sotial_f"><img src="/images/icons/f.svg" alt=""></div></a>
+      <a target="_blank" href="https://www.google.com.ua/"><div class="sotial_g"><img src="/images/icons/G+.svg" alt=""></div></a>
+      <a target="_blank" href="https://twitter.com/?lang=uk"><div class="sotial_t"><img src="/images/icons/twit.svg" alt=""></div></a>
+      <a target="_blank" href="https://www.pinterest.com/"><div class="sotial_p"><img src="/images/icons/pinterest.svg" alt=""></div></a>
+    </div>
+	<div class="vidgets">
+		<ul>
+			<li class="vidgets_title"><h4>КОНТАКТЫ</h4>
+				<ul>
+					<li>
+						<a href="tel:+380 555 55 66">+380 555 55 66</a>
+					</li>
+					<li>
+						<a target="_top" href="mailto:digi@gmail.com">digi@gmail.com</a>
+					</li>
+					<li></li>
+				</ul>
+			</li>
+			<li class="vidgets_title"><h4>АДРЕС</h4>
+				<ul>
+					<li>
+						<a target="_blank" href="https://goo.gl/maps/KTsE3UiQY4nhWU1C7">Пр. Науки 107<br>Kиев / Украина</a>
+					</li>
+					<li></li>
+					<li></li>
+				</ul>
+			</li>
+			<li class="vidgets_title"><h4>ПОМОЩЬ</h4>
+				<ul>
+					<li>
+						<a href="#">Как с нами связаться?</a>
+					</li>
+					<li>
+						<a href="#di-gi">Что такое диджитал?</a>
+					</li>
+					<li>
+						<a href="#">Стоимость услуг</a>
+					</li>
+				</ul>
+			</li>
+			<li class="vidgets_title"><h4>МЕНЮ</h4>
+				<ul>
+					<li>
+						<a href="#portfolio">Наши проекты</a>
+					</li>
+					<li>
+						<a href="#our_team">Команда</a>
+					</li>
+					<li>
+						<a href="#blog">Блог</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	 </section>
+	 <section class="copyright">
+		 <div>
+			 <button class="button_up"><a href="#di-gi">ВВЕРХ<img src="../images/icons/arrow_up.svg" alt=""></a></button>
+		 </div>
+	 </section>
 </body>
-
 </html>
