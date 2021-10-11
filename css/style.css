@@ -652,7 +652,7 @@ body section  {
   margin-bottom: 9px;
 }
 
-.latest_news_content img:hover {
+.latest_news_content_img:hover img {
   border: 10px solid #2B4074;
   box-sizing: border-box;
   border-radius: 4px;
