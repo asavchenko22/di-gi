@@ -313,6 +313,7 @@ body section  {
 
 .servises_items {
   position: absolute;
+  box-sizing: border-box;
   flex-wrap: wrap;
   display: flex;
   width: 927px;
@@ -341,7 +342,6 @@ body section  {
 
 .servises_strategy, .servises_content, .servises_analysys, .servises_sotial_media, .servises_development,
 .servises_design_ux, .servises_advertising, .servises_products {
-  
   width: 229px;
   height: 270.53px;
   border: 1px solid #F9F6E5;
@@ -355,12 +355,11 @@ body section  {
 .servises_strategy:hover, .servises_content:hover, .servises_analysys:hover,.servises_sotial_media:hover,
 .servises_development:hover, .servises_design_ux:hover, .servises_advertising:hover, .servises_products:hover{
   position: relative;
-  width: 223px;
+  width: 223.5px;
   height: 264px;
   justify-content: center;
   align-items: center;
   border: 4px solid #2B4074;
-  transition: .2s ease;
 }
 
 .servises_strategy:hover > img, .servises_content:hover > img, .servises_analysys:hover > img, .servises_sotial_media:hover > img,
