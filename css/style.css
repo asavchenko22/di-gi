@@ -1,6 +1,6 @@
 html {
-  overflow-y: scroll;
   scroll-behavior: smooth;
+  overflow-x: scroll !important;
 }
 
 @font-face {
@@ -26,7 +26,11 @@ html {
 * img, button {
   border-radius: 3px;
 }
-
+ 
+body {
+  min-width: 1440px;
+  margin: 0 auto;
+}
 
 body section  {
   width: 1440px;
@@ -72,6 +76,7 @@ body section  {
 .container {
   position: relative;
   width: 1309px;
+  height: 668px;
 	margin: 0 auto;
 }
 
@@ -131,6 +136,7 @@ body section  {
   color: #FFFFFF;
   margin: 0 auto;
 }
+
 .intro_button {
   position: absolute;
   width: 200px;
@@ -138,7 +144,6 @@ body section  {
   left: 554.5px;
   top: 405px;
   background: #2B4074;
-  
   cursor: pointer;
 }
 
@@ -370,11 +375,11 @@ body section  {
   opacity: 1;
 }
 
-
 /* Portfolio */
 
 .portfolio {
   position: relative;
+  box-sizing: border-box;
   padding: 5px;
   height: 668px;
   background: linear-gradient(180deg, #2B4074 0%, rgba(43, 64, 116, 0) 100%);
@@ -383,7 +388,6 @@ body section  {
 .portfolio_container {
   padding: 0px 15px;
 }
-
 
 .our_projects {
   position: absolute;
@@ -619,8 +623,10 @@ body section  {
 }
 
 .latest_news_content_img {
+  width: 270px;
+  box-sizing: border-box;
   position: relative;
-  
+  overflow: hidden;
 }
 
 .news {
@@ -631,6 +637,7 @@ body section  {
   bottom: 12px;
   background: #FFFFFF;
   border-radius: 3px;
+  transition: .3s ease;
 }
 
 .news p {
@@ -643,26 +650,19 @@ body section  {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 2px;
-  color: #4A4A4A;
+  color: #4A4A4A;  
 }
 
 .latest_news_content img { 
   position: relative;
   width: 270px;
   margin-bottom: 9px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .latest_news_content_img:hover img {
   border: 10px solid #2B4074;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.latest_news_content_img .news:hover > .latest_news_content_img {
-  border: 10px solid #2B4074;
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: .3s ease;
 }
 
 .latest_news_content_img:hover > .news p {
@@ -670,11 +670,7 @@ body section  {
 }
 
 .latest_news_content_img:hover > .news {
-  position: absolute;
-  width: 270px;
-  height: 40px;
   bottom: 15%;
-  transition: .3s ease;
   background: #2B4074;
 }
 
